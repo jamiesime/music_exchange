@@ -8,11 +8,16 @@ import static android.R.attr.type;
 
 public class FrenchHorn extends Instrument implements Sellable, Playable{
 
-    public FrenchHorn(int ID, Type type, Body body) {
+    private double boughtFor;
+    private double sellFor;
+
+    public FrenchHorn(int ID, Type type, Body body, double boughtFor, double sellFor) {
         super(ID, type, body);
+        this.boughtFor = boughtFor;
+        this.sellFor = sellFor;
     }
 
-    public double calculateMarkUp(double boughtFor, double sellFor){
+    public double calculateMarkUp(){
         double markUp = (sellFor -= boughtFor);
         return markUp;
     }

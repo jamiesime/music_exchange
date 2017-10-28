@@ -4,7 +4,7 @@ package example.codeclan.com.music_exchange;
  * Created by user on 28/10/2017.
  */
 
-public class Instrument {
+public abstract class Instrument {
 
     private int ID;
     private Type type;

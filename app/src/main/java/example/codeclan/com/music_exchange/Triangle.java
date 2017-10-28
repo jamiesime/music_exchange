@@ -6,11 +6,16 @@ package example.codeclan.com.music_exchange;
 
 public class Triangle extends Instrument implements Sellable, Playable {
 
-    public Triangle(int ID, Type type, Body body) {
+    private double boughtFor;
+    private double sellFor;
+
+    public Triangle(int ID, Type type, Body body, double boughtFor, double sellFor) {
         super(ID, type, body);
+        this.boughtFor = boughtFor;
+        this.sellFor = sellFor;
     }
 
-    public double calculateMarkUp(double boughtFor, double sellFor){
+    public double calculateMarkUp(){
         double markUp = (sellFor -= boughtFor);
         return markUp;
     }

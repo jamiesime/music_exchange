@@ -6,7 +6,7 @@ package example.codeclan.com.music_exchange;
 
 public interface Sellable {
 
-    public double calculateMarkUp(double boughtFor, double sellFor);
+    public double calculateMarkUp();
     public int getID();
 
 }

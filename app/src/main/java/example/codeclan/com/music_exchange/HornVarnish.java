@@ -6,7 +6,15 @@ package example.codeclan.com.music_exchange;
 
 public class HornVarnish implements Sellable {
 
-    public double calculateMarkUp(double boughtFor, double sellFor){
+    private double boughtFor;
+    private double sellFor;
+
+    public HornVarnish(double boughtFor, double sellFor) {
+        this.boughtFor = boughtFor;
+        this.sellFor = sellFor;
+    }
+
+    public double calculateMarkUp(){
         double markUp = (sellFor -= boughtFor);
         return markUp;
     }

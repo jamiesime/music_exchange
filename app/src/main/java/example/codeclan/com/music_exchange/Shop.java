@@ -14,7 +14,7 @@ public class Shop {
 
     public Shop(String name) {
         this.name = name;
-        ArrayList<Sellable> stock = new ArrayList<>();
+        this.stock = new ArrayList<>();
     }
 
     public void addToStock(Sellable newStock){
@@ -24,6 +24,14 @@ public class Shop {
     public void removeFromStock(Sellable toSell){
         int toTake = stock.indexOf(toSell);
         stock.remove(toTake);
+    }
+
+    public int getStockSize (){
+        return this.stock.size();
+    }
+
+    public boolean checkForItem(Sellable item){
+        return this.stock.contains(item);
     }
 
 }
