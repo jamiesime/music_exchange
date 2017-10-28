@@ -20,6 +20,10 @@ public class Triangle extends Instrument implements Sellable, Playable {
         return markUp;
     }
 
+    public double getBoughtFor() {
+        return boughtFor;
+    }
+
     public int getID(){
         return this.getID();
     }

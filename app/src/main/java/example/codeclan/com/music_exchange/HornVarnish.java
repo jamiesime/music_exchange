@@ -14,6 +14,11 @@ public class HornVarnish implements Sellable {
         this.sellFor = sellFor;
     }
 
+    @Override
+    public double getBoughtFor() {
+        return boughtFor;
+    }
+
     public double calculateMarkUp(){
         double markUp = (sellFor -= boughtFor);
         return markUp;

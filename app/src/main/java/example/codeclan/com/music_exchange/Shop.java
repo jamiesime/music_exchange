@@ -1,6 +1,7 @@
 package example.codeclan.com.music_exchange;
 
 import java.lang.reflect.Array;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -40,6 +41,18 @@ public class Shop {
             total += item.calculateMarkUp();
         }
         return total;
+    }
+
+    public double getProfitAsPercentage(){
+        double overhead = 0;
+        double profit = getPotentialProfit();
+        for (Sellable item : stock) {
+            overhead += (item.getBoughtFor());
+        }
+        double result = ((profit / overhead) * 100);
+        DecimalFormat df = new DecimalFormat("#.##");
+        result = Double.valueOf(df.format(result));
+        return result;
     }
 
 }

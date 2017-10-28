@@ -21,11 +21,15 @@ public class Kazoo extends Instrument implements Sellable, Playable{
         return markUp;
     }
 
+    public double getBoughtFor() {
+        return boughtFor;
+    }
+
     public int getID(){
         return this.getID();
     }
 
     public String play(){
-        return "The noise a Kazoo makes.";
+        return "Kazoom";
     }
 }
