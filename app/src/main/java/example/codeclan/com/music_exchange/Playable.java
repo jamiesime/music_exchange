@@ -6,6 +6,6 @@ package example.codeclan.com.music_exchange;
 
 public interface Playable {
 
-    public String play();
+    String play();
 
 }
