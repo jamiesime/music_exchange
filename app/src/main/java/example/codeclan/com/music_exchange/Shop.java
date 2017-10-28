@@ -34,4 +34,12 @@ public class Shop {
         return this.stock.contains(item);
     }
 
+    public double getPotentialProfit(){
+        double total = 0.00;
+        for (Sellable item : stock){
+            total += item.calculateMarkUp();
+        }
+        return total;
+    }
+
 }

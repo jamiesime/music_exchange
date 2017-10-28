@@ -15,11 +15,13 @@ public class TestShop {
 
     Shop shop;
     Kazoo kazoo;
+    Triangle triangle;
 
     @Before
     public void setUp(){
         shop = new Shop("Steve's Music Shop");
         kazoo = new Kazoo(1, Type.BLOWINGSTYLE, Body.PLASTIC, 50.00, 75.00);
+        triangle = new Triangle(2, Type.PERCUSSIVE, Body.STEEL, 10.00, 15.00);
     }
 
     @Test
@@ -33,6 +35,13 @@ public class TestShop {
         shop.addToStock(kazoo);
         shop.removeFromStock(kazoo);
         assertEquals(false, shop.checkForItem(kazoo));
+    }
+
+    @Test
+    public void testTotalProfit(){
+        shop.addToStock(kazoo);
+        shop.addToStock(triangle);
+        assertEquals(30.00, shop.getPotentialProfit());
     }
 
 
