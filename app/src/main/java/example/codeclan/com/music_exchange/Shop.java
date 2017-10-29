@@ -61,4 +61,12 @@ public class Shop {
         return result;
     }
 
+    public double getProfitMade(){
+        double total = 0;
+        for (Sellable item : sold){
+            total += item.calculateMarkUp();
+        }
+        return total;
+    }
+
 }

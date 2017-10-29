@@ -64,4 +64,12 @@ public class TestShop {
         assertEquals(108.15, shop.getProfitAsPercentage());
     }
 
+    @Test
+    public void testProfitMade(){
+        shop.addToSold(kazoo);
+        shop.addToSold(triangle);
+        shop.addToSold(hornVarnish);
+        assertEquals(32.50, shop.getProfitMade());
+    }
+
 }
