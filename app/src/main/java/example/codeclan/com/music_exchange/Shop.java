@@ -12,20 +12,26 @@ public class Shop {
 
     private String name;
     private ArrayList<Sellable> stock;
+    private ArrayList<Sellable> sold;
 
     public Shop(String name) {
         this.name = name;
         this.stock = new ArrayList<>();
+        this.sold = new ArrayList<>();
     }
 
     public void addToStock(Sellable newStock){
         stock.add(newStock);
     }
 
+    public void addToSold(Sellable isSold){ sold.add(isSold);}
+
     public void removeFromStock(Sellable toSell){
         int toTake = stock.indexOf(toSell);
         stock.remove(toTake);
     }
+
+    public int getSoldSize() { return this.sold.size();}
 
     public int getStockSize (){
         return this.stock.size();

@@ -36,6 +36,10 @@ public abstract class Instrument {
         return sellFor;
     }
 
+    public int getID() {
+        return ID;
+    }
+
     public double calculateMarkUp(){
         double markUp = (sellFor -= boughtFor);
         return markUp;

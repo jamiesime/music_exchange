@@ -6,12 +6,9 @@ package example.codeclan.com.music_exchange;
 
 public class HornVarnish extends Accessories implements Sellable {
 
-    public HornVarnish(double boughtFor, double sellFor) {
-        super(boughtFor, sellFor);
+    public HornVarnish(int ID, double boughtFor, double sellFor) {
+        super(ID, boughtFor, sellFor);
     }
 
-    public int getID() {
-        return this.getID();
-    }
 
 }
