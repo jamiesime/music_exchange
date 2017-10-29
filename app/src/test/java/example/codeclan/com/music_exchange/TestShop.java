@@ -3,7 +3,13 @@ package example.codeclan.com.music_exchange;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import example.codeclan.com.music_exchange.MerchAttributes.Body;
+import example.codeclan.com.music_exchange.MerchAttributes.Type;
+import example.codeclan.com.music_exchange.Merchandise.FrenchHorn;
+import example.codeclan.com.music_exchange.Merchandise.HornVarnish;
+import example.codeclan.com.music_exchange.Merchandise.Kazoo;
+import example.codeclan.com.music_exchange.Merchandise.Triangle;
+import example.codeclan.com.music_exchange.Merchandise.TriangleHolder;
 
 import static junit.framework.Assert.assertEquals;
 

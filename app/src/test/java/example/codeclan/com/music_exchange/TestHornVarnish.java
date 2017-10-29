@@ -3,6 +3,8 @@ package example.codeclan.com.music_exchange;
 import org.junit.Before;
 import org.junit.Test;
 
+import example.codeclan.com.music_exchange.Merchandise.HornVarnish;
+
 import static junit.framework.Assert.assertEquals;
 
 /**

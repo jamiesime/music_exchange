@@ -3,6 +3,10 @@ package example.codeclan.com.music_exchange;
 import org.junit.Before;
 import org.junit.Test;
 
+import example.codeclan.com.music_exchange.MerchAttributes.Body;
+import example.codeclan.com.music_exchange.MerchAttributes.Type;
+import example.codeclan.com.music_exchange.Merchandise.FrenchHorn;
+
 import static junit.framework.Assert.assertEquals;
 
 /**

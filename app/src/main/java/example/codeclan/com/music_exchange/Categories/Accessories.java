@@ -1,4 +1,6 @@
-package example.codeclan.com.music_exchange;
+package example.codeclan.com.music_exchange.Categories;
+
+import example.codeclan.com.music_exchange.Sellable;
 
 import static android.os.Build.ID;
 

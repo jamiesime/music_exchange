@@ -1,4 +1,7 @@
-package example.codeclan.com.music_exchange;
+package example.codeclan.com.music_exchange.Categories;
+
+import example.codeclan.com.music_exchange.MerchAttributes.Body;
+import example.codeclan.com.music_exchange.MerchAttributes.Type;
 
 /**
  * Created by user on 28/10/2017.

@@ -1,4 +1,7 @@
-package example.codeclan.com.music_exchange;
+package example.codeclan.com.music_exchange.Merchandise;
+
+import example.codeclan.com.music_exchange.Categories.Accessories;
+import example.codeclan.com.music_exchange.Sellable;
 
 /**
  * Created by user on 28/10/2017.
