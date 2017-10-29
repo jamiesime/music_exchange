@@ -6,7 +6,7 @@ import static android.os.Build.ID;
  * Created by user on 29/10/2017.
  */
 
-public abstract class Accessories {
+public abstract class Accessories implements Sellable {
 
     private double boughtFor;
     private double sellFor;

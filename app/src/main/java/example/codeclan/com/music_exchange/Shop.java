@@ -20,8 +20,14 @@ public class Shop {
         this.sold = new ArrayList<>();
     }
 
-    public void addToStock(Sellable newStock){
+    public String addToStock(Sellable newStock){
+        for (Sellable item : stock){
+            if (item.getID() == newStock.getID()){
+                return "Invalid ID";
+            }
+        }
         stock.add(newStock);
+        return "Item added to stock.";
     }
 
     public void addToSold(Sellable isSold){ sold.add(isSold);}

@@ -18,6 +18,7 @@ public class TestShop {
     Triangle triangle;
     FrenchHorn frenchHorn;
     HornVarnish hornVarnish;
+    TriangleHolder triangleHolder;
 
     @Before
     public void setUp(){
@@ -25,7 +26,8 @@ public class TestShop {
         kazoo = new Kazoo(1, Type.BLOWINGSTYLE, Body.PLASTIC, 50.00, 75.00);
         triangle = new Triangle(2, Type.PERCUSSIVE, Body.STEEL, 10.00, 15.00);
         frenchHorn = new FrenchHorn(3, Type.BRASS, Body.SOLIDGOLD, 223.45, 499.99, 5);
-        hornVarnish = new HornVarnish(4, 3.00, 5.50);
+        hornVarnish = new HornVarnish(4, 3.00, 5.50, "Supreme");
+        triangleHolder = new TriangleHolder(4, 1.00, 40.00);
 
     }
 
@@ -34,6 +36,12 @@ public class TestShop {
         shop.addToStock(kazoo);
         shop.addToStock(hornVarnish);
         assertEquals(2, shop.getStockSize());
+    }
+
+    @Test
+    public void testAddToStockSameID(){
+        shop.addToStock(hornVarnish);
+        assertEquals("Invalid ID", shop.addToStock(triangleHolder));
     }
 
     @Test

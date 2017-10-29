@@ -8,5 +8,5 @@ public interface Sellable {
 
     double calculateMarkUp();
     double getBoughtFor();
-
+    int getID();
 }
