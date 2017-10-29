@@ -1,4 +1,4 @@
-package example.codeclan.com.music_exchange;
+package example.codeclan.com.music_exchange.Categories;
 
 /**
  * Created by user on 28/10/2017.

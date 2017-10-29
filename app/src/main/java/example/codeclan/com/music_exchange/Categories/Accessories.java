@@ -1,9 +1,5 @@
 package example.codeclan.com.music_exchange.Categories;
 
-import example.codeclan.com.music_exchange.Sellable;
-
-import static android.os.Build.ID;
-
 /**
  * Created by user on 29/10/2017.
  */

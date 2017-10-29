@@ -1,8 +1,9 @@
 package example.codeclan.com.music_exchange;
 
-import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+
+import example.codeclan.com.music_exchange.Categories.Sellable;
 
 /**
  * Created by user on 28/10/2017.
